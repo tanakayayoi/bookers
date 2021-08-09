@@ -64,6 +64,15 @@
             <td>Edit</td>
             <td>Destroy</td>
         </tr>
+        <tr>
+        <% @books.each do |book| %>
+            <td><%= book.title %></td>
+            <td><%= book.body %></td>
+        <% end %>
+            <td>Show</td>
+            <td>Edit</td>
+            <td>Destroy</td>
+        </tr>
     </tbody>
 </table>
 

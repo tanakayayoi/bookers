@@ -271,3 +271,30 @@ Completed 200 OK in 399ms (Views: 380.7ms | ActiveRecord: 1.7ms)
   ↳ lib/batch/data_reset.rb:4
   [1m[36mBook Destroy (26.6ms)[0m  [1m[31mDELETE FROM "books"[0m
   ↳ lib/batch/data_reset.rb:4
+  [1m[36mBook Destroy (8.6ms)[0m  [1m[31mDELETE FROM "books"[0m
+  ↳ lib/batch/data_reset.rb:4
+  [1m[36mBook Destroy (15.9ms)[0m  [1m[31mDELETE FROM "books"[0m
+  ↳ lib/batch/data_reset.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (2.4ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "railsを学ぼう"], ["body", "rails cについて"], ["created_at", "2021-12-27 14:05:40.771989"], ["updated_at", "2021-12-27 14:05:40.771989"]]
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[36mBook Destroy (19.5ms)[0m  [1m[31mDELETE FROM "books"[0m
+  ↳ lib/batch/data_reset.rb:4
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mBook Destroy (13.0ms)[0m  [1m[31mDELETE FROM "books"[0m
+  ↳ lib/batch/data_reset.rb:4
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  [1m[36mBook Destroy (9.1ms)[0m  [1m[31mDELETE FROM "books"[0m
+  ↳ lib/batch/data_reset.rb:4
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Create (1.2ms)[0m  [1m[32mINSERT INTO "books" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "railsを学ぼう"], ["body", "rails cについて"], ["created_at", "2021-12-27 14:11:00.256361"], ["updated_at", "2021-12-27 14:11:00.256361"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mBook Destroy (1.2ms)[0m  [1m[31mDELETE FROM "books" WHERE "books"."id" = ?[0m  [["id", 6]]
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mBook Load (0.1ms)[0m  [1m[34mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]

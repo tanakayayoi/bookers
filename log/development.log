@@ -243,3 +243,9 @@ Processing by BooksController#index as HTML
 Completed 200 OK in 318ms (Views: 305.2ms | ActiveRecord: 0.7ms)
 
 
+  [1m[36mBook Destroy (23.5ms)[0m  [1m[31mDELETE FROM "books"[0m
+  ↳ lib/batch/data_reset.rb:4
+  [1m[36mBook Destroy (8.8ms)[0m  [1m[31mDELETE FROM "books"[0m
+  ↳ lib/batch/data_reset.rb:4
+  [1m[36mBook Destroy (7.1ms)[0m  [1m[31mDELETE FROM "books"[0m
+  ↳ lib/batch/data_reset.rb:4
